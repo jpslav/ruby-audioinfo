@@ -188,9 +188,11 @@ class AudioInfo
       # default_fill_musicbrainz_fields
 
       when 'wav'
-        @info = WaveFile::Reader.info(filename)
-        @length = @info.duration.hours * 3600 + @info.duration.minutes * 60 + @info.duration.seconds +
-                  @info.duration.milliseconds * 0.001
+        reader = WaveFile::Reader.new(filename)
+        @info = reader.native_format
+        duration = reader.total_duration
+        @length = duration.hours * 3600 + duration.minutes * 60 + duration.seconds +
+                  duration.milliseconds * 0.001
         @bitrate = File.size(filename) * 8 / @length / 1024
 
       else
