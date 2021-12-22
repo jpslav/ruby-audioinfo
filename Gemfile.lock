@@ -8,7 +8,7 @@ PATH
       mp4info (>= 1.7.3)
       ruby-mp3info (>= 0.8)
       ruby-ogginfo (>= 0.6.13)
-      wavefile (~> 0.6.0)
+      wavefile (>= 1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -16,7 +16,7 @@ GEM
     apetag (1.1.5)
       cicphash (>= 1.0.0)
     ast (2.4.1)
-    cicphash (1.1.0)
+    cicphash (2.0.0)
     codecov (0.2.15)
       simplecov (>= 0.15, < 0.21)
     docile (1.3.4)
@@ -56,9 +56,10 @@ GEM
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.2)
     unicode-display_width (1.7.0)
-    wavefile (0.6.0)
+    wavefile (1.1.1)
 
 PLATFORMS
+  ruby
   universal-java-1.8
   x86_64-darwin-20
   x86_64-linux

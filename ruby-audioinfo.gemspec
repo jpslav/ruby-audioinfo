@@ -31,5 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'mp4info', '>= 1.7.3'
   spec.add_dependency 'ruby-mp3info', '>= 0.8'
   spec.add_dependency 'ruby-ogginfo', '>= 0.6.13'
-  spec.add_dependency 'wavefile', '~> 0.6.0'
+  spec.add_dependency 'wavefile', '>= 1.1'
 end
